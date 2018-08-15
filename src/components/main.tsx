@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export class Home extends React.Component<any, any> {
+export class Main extends React.Component<any, any> {
 
   private name: Array<string> = ["Hello", "World"];
 
@@ -11,7 +11,7 @@ export class Home extends React.Component<any, any> {
   public render() {
       return (
         <div>
-          Home Content. { ...this.name }
+          Main Content. { ...this.name }
         </div>
       );   
   }
