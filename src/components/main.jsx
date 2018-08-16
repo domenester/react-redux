@@ -6,10 +6,12 @@ import Counter from "./counter/counter"
 
 const reducers = combineReducers({ counter: counterReducer })
 
-export default props => {
-  return (
-    <Provider store={createStore(reducers)}>
-      <Counter/>
-    </Provider>
-  )
+export default class Main {
+  render() {
+    return (
+      <Provider store={createStore(reducers)}>
+        <Counter/>
+      </Provider>
+    )
+  }
 }
