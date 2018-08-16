@@ -6,7 +6,7 @@ import Counter from "./counter/counter"
 
 const reducers = combineReducers({ counter: counterReducer })
 
-export default class Main {
+export default class Main extends React.Component{
   render() {
     return (
       <Provider store={createStore(reducers)}>
